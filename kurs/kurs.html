@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs Dollar</title>
+    <style>
+        body{
+            background-color:plum;
+            min-height: 50;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            padding: 1em;
+            max-width: 12;
+            border-radius: 1em;
+        }
+        input,select,button{
+            margin: 1em;
+            padding: 1em;
+            border-radius: 1em;
+            outline: none;
+            border: 1px solid black;
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kurs Mata Uang</h1>
+        <div class="container">
+            <input type="number" class="input" id="Tulis" placeholder="Masukan Jumlah">
+                <select class="pilihan">
+                    <option value="1">USD</option>
+                    <option value="2">SGD</option>
+                    <option value="3">MYR</option>
+                    <option value="4">JPY</option>
+                    <option value="5">EURO</option>
+                    <option value="6">SAR</option>
+                </select>
+                <button class="hitung">Hitung</button>
+            <input type="number" placeholder="IDR" class="IDR">
+            
+        </div>
+        <script src="kurs.js"></script>
+</body>
+</html>
